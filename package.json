@@ -1,0 +1,24 @@
+{
+  "name": "tclient-discord-bot",
+  "version": "0.0.0",
+  "description": "TClient Discord Bot",
+  "homepage": "https://github.com/sollybunny/tclient-discord-bot#readme",
+  "bugs": {
+    "url": "https://github.com/sollybunny/tclient-discord-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sollybunny/tclient-discord-bot.git"
+  },
+  "license": "GPL-3.0",
+  "author": "SollyBunny",
+  "type": "module",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node src/index.mjs"
+  },
+  "dependencies": {
+    "discord.js": "^14.20.0",
+    "dotenv": "^16.5.0"
+  }
+}
