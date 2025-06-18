@@ -46,4 +46,14 @@ info["Information/русский-чаво"] = [
 	},
 ];
 
+info["Information/rules"] = [
+	{
+		content: `# Rules
+* Please apply common sense!
+* Don't use @everyone or @here, you will be timed out
+* Don't click on fishy links and then follow instructions to give yourself a virus`,
+		allowedMentions: { parse: [] },
+	},
+];
+
 export default info;
