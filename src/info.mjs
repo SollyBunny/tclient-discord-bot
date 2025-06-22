@@ -9,7 +9,7 @@ info["Information/faq"] = [
 			"Does the client contain cheats?":
 				"No, anything deemed by DDNet as a cheat will never be added.",
 			"When are you adding {certain feature}? Will you add {certain feature}?":
-				`I prioritize adding features that are the most useful for how much effort they take to implement. Multiple people asking in <#${(await getChannel("Text Channels/feature-request")).id}> will increase the chance it is added.`,
+				`I prioritize adding features that are the most useful for how much effort they take to implement. Multiple people asking in <#${(await getChannel("Main/feature-request")).id}> will increase the chance it is added.`,
 			"When is the next update?":
 				"When new features are done, or DDNet updates.",
 			"How do I copy a tclient conflig, or transfer a tclient config file to my game?":
@@ -32,7 +32,7 @@ info["Information/русский-чаво"] = [
 			"Есть ли в клиенте читы?":
 				"Нет, все, что DDNet сочтет читом, никогда не будет добавлено.",
 			"Когда вы добавите {определенную функцию}? Добавите ли вы {определенную функцию}?":
-				`Создатель сам решит какие функции добавить в клиент, которые наиболее полезны с точки зрения усилий, необходимых для их реализации. Если несколько человек отправят запрос в <#${(await getChannel("Text Channels/feature-request")).id}> это увеличит вероятность того, что он будет добавлен.`,
+				`Создатель сам решит какие функции добавить в клиент, которые наиболее полезны с точки зрения усилий, необходимых для их реализации. Если несколько человек отправят запрос в <#${(await getChannel("Main/feature-request")).id}> это увеличит вероятность того, что он будет добавлен.`,
 			"Когда выйдет следующее обновление?":
 				"Когда доделают все функции, или-же при обновлении DDNet'а.",
 			"Как скопировать конфигурацию TClient'a или перенести файл конфигурации TClient'a в мою игру?":
@@ -54,6 +54,21 @@ info["Information/rules"] = [
 * Please apply common sense!
 * Don't use @everyone or @here, you will be timed out
 * Don't click on fishy links and then follow instructions to give yourself a virus`,
+		allowedMentions: { parse: [] },
+	},
+];
+
+info["Information/rules"] = [
+	{
+		content: `# Rules
+* Please apply common sense!
+* Don't use @everyone or @here, you will be timed out
+* Don't click on fishy links and then follow instructions to give yourself a virus
+\u200E
+# Правила
+* Пожалуйста, применяйте здравый смысл
+* Не используйте @everyone или @here, вам заблокируют чат на время
+* Не нажимайте на сомнительные ссылки и не следуйте инструкциям, чтобы заразить себя вирусом`,
 		allowedMentions: { parse: [] },
 	},
 ];
