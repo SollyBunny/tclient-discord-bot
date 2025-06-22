@@ -20,6 +20,8 @@ info["Information/faq"] = [
 				"`tc_animate_wheel_time 0`",
 			"My conditionals aren't working in nightly":
 				"This was an experiemntal feature and was changed for ease of parsing, use `{var}` instead of `$(var)` now",
+			"Is there a 32-bit build?":
+				"Eventually we want to distrubute 32-bit, currently you have to compile it yourself using the guide on [DDNet](<https://github.com/ddnet/ddnet>)"
 		}).map(([q, a]) => `## Q: ${q}\nA: ${a}`).join("\n\u200E\n"),
 	},
 ];
@@ -28,7 +30,7 @@ info["Information/русский-чаво"] = [
 	{
 		content: `# русский-чаво\nSee also English <#${(await getChannel("Information/faq")).id}>\nTranslation by <@623924391356399616>\n\u200E\n` + Object.entries({
 			"Есть ли в клиенте читы?":
-				"Нет, anything deemed by DDNet as a cheat will never be added.",
+				"Нет, все, что DDNet сочтет читом, никогда не будет добавлено.",
 			"Когда вы добавите {определенную функцию}? Добавите ли вы {определенную функцию}?":
 				`Создатель сам решит какие функции добавить в клиент, которые наиболее полезны с точки зрения усилий, необходимых для их реализации. Если несколько человек отправят запрос в <#${(await getChannel("Text Channels/feature-request")).id}> это увеличит вероятность того, что он будет добавлен.`,
 			"Когда выйдет следующее обновление?":
@@ -36,11 +38,11 @@ info["Information/русский-чаво"] = [
 			"Как скопировать конфигурацию TClient'a или перенести файл конфигурации TClient'a в мою игру?":
 				"Откройте клиент, перейдите в настройки TClient'a, нажмите вкладку \"Информация\" и нажмите кнопку \"Настройки TClient\", это откроет файл",
 			"Почему TClient не открывается и просто отображается в диспетчере задач?":
-				"Ответ: Устаревшая конфигурация для `bindwheel` в настоящее время сломана, удалите строки, начинающиеся с bindwheel в `settings_tclient.cfg`",
+				"Устаревшая конфигурация для `bindwheel` в настоящее время сломана, удалите строки, начинающиеся с bindwheel в `settings_tclient.cfg`",
 			"Мне не нравятся анимированные колесо эмоций и колеса биндов, как мне их отключить?":
 				"`tc_animate_wheel_time 0`",
-			"My conditionals aren't working in nightly":
-				"This was an experiemntal feature and was changed for ease of parsing, use `{var}` instead of `$(var)` now",
+			"Is there a 32-bit build?":
+				"Eventually we want to distrubute 32-bit, currently you have to compile it yourself using the guide on [DDNet](<https://github.com/ddnet/ddnet>)"
 		}).map(([q, a]) => `## Вопрос: ${q}\nОтвет: ${a}`).join("\n\u200E\n"),
 		allowedMentions: { parse: [] },
 	},
