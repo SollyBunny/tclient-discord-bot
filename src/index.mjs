@@ -30,7 +30,7 @@ client.on("messageCreate", async (message) => {
 	}
 
 	if (content.includes("$")) {
-		for (const { name, message } of Object.entires(commands)) {
+		for (const { name, message } of Object.entries(commands)) {
 			if(content.includes("$" + name)) {
 				message.reply(message);
 				return;
