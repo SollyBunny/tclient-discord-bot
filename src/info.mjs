@@ -41,8 +41,8 @@ info["Information/русский-чаво"] = [
 				"Устаревшая конфигурация для `bindwheel` в настоящее время сломана, удалите строки, начинающиеся с bindwheel в `settings_tclient.cfg`",
 			"Мне не нравятся анимированные колесо эмоций и колеса биндов, как мне их отключить?":
 				"`tc_animate_wheel_time 0`",
-			"Is there a 32-bit build?":
-				"Eventually we want to distrubute 32-bit, currently you have to compile it yourself using the guide on [DDNet](<https://github.com/ddnet/ddnet>)"
+			"Когда выйдет 32-битная версия клиента?":
+				"Мы хотим создать 32-битную версию, в настоящее время вам придется компилировать ее самостоятельно, используя руководство [DDNet'а](<https://github.com/ddnet/ddnet>)"
 		}).map(([q, a]) => `## Вопрос: ${q}\nОтвет: ${a}`).join("\n\u200E\n"),
 		allowedMentions: { parse: [] },
 	},
